@@ -6,12 +6,23 @@
     <meta name="viewport" content="width=device-width" />
     <script type="module" src="email.js"></script>
     <script type="module" src="logout.js"></script>
-    <link rel="stylesheet" href="pumpkin.css" />
+    <script type="module" src="theme.js"></script>
+    <link id="theme" rel="stylesheet" href="pumpkin.css" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
+    <form class="color-picker" action="">
+    <fieldset>
+      <legend>Pick theme color</legend>
+      <label for="theme" class="sr-only">pumpkin</label>
+      <input type="radio" name="theme" id="pumpkin" checked>
+
+      <label for="theme" class="sr-only">pumpkin</label>
+      <input type="radio" name="theme" id="pumpkin" checked>
+      </fieldset>
+    </form>
     <button class="nav shadow-md rounded-2xl fixed right-4 bottom-6 z-40" 
     id="logout"
     type="submit">
